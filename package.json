@@ -1,0 +1,61 @@
+{
+    "name": "pdi-file-opener",
+    "displayName": "PDI File Opener",
+    "description": "Open .kjb and .ktr files in Pentaho Data Integration (PDI) directly from VSCode",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.74.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:pdi-file-opener.openInPDI"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "pdi-file-opener.openInPDI",
+                "title": "Open in Pentaho Data Integration"
+            }
+        ],
+        "menus": {
+            "explorer/context": [
+                {
+                    "command": "pdi-file-opener.openInPDI",
+                    "when": "resourceExtname == .kjb || resourceExtname == .ktr",
+                    "group": "navigation"
+                }
+            ]
+        },
+        "configuration": {
+            "title": "PDI File Opener",
+            "properties": {
+                "pdi-file-opener.pdiPath": {
+                    "type": "string",
+                    "default": "",
+                    "description": "Path to PDI installation directory (e.g., /Applications/pdi-ce-9.4.0.0-343)"
+                },
+                "pdi-file-opener.enableDebugLogs": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Enable debug logging for troubleshooting"
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.74.0",
+        "@types/node": "16.x",
+        "typescript": "^4.9.4"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
