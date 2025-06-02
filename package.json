@@ -4,11 +4,15 @@
     "description": "Open .kjb and .ktr files in Pentaho Data Integration (PDI) directly from VSCode",
     "version": "1.0.0",
     "engines": {
-        "vscode": "^1.74.0"
+        "vscode": "^1.100.0"
     },
     "categories": [
         "Other"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ArmanGrewal007/pdi-file-opener.git"
+    },
     "activationEvents": [
         "onCommand:pdi-file-opener.openInPDI"
     ],
@@ -51,9 +55,9 @@
         "watch": "tsc -watch -p ./"
     },
     "devDependencies": {
-        "@types/vscode": "^1.74.0",
-        "@types/node": "16.x",
-        "typescript": "^4.9.4"
+        "@types/node": "^16.18.126",
+        "@types/vscode": "^1.100.0",
+        "typescript": "^4.9.5"
     },
     "keywords": [],
     "author": "",
