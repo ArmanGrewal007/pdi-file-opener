@@ -19,4 +19,4 @@ vsce publish
 ```
 
 View your extensions at - https://marketplace.visualstudio.com/manage/publishers/armangrewal007 <br>
-Extension is live at Marketplace
+Extension is live at Marketplace - https://marketplace.visualstudio.com/items?itemName=ArmanGrewal007.pdi-file-opener&ssr=false#review-details
