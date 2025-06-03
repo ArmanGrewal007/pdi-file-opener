@@ -1,4 +1,4 @@
-<div align="center"><h1>PDI File Opnener Extension (VS Code)</h1></div>
+<div align="center"><h1>PDI File Opener Extension (VS Code)</h1></div>
 
 This extension is custom-made for MacBooks only (yet)
 
