@@ -2,7 +2,7 @@
     "name": "pdi-file-opener",
     "displayName": "PDI File Opener",
     "description": "Open .kjb and .ktr files in Pentaho Data Integration (PDI) directly from VSCode",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "publisher": "ArmanGrewal007",
     "icon": "images/icon.png",
     "engines": { "vscode": "^1.100.0" },
